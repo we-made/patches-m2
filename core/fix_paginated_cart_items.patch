@@ -1,0 +1,13 @@
+diff --git a/Model/Resolver/CartItemsPaginated.php b/Model/Resolver/CartItemsPaginated.php
+index a32f94a..e45454a 100644
+--- a/Model/Resolver/CartItemsPaginated.php
++++ b/Model/Resolver/CartItemsPaginated.php
+@@ -49,7 +49,7 @@ class CartItemsPaginated implements ResolverInterface
+ 
+         $pageSize = $args['pageSize'];
+         $currentPage = $args['currentPage'];
+-        $offset = ($currentPage - 1) * $pageSize;
++        $offset = $currentPage;
+         $order = CartItemsPaginated::SORT_ORDER;
+         $orderBy = CartItemsPaginated::SORT_ORDER_BY;
+ 
